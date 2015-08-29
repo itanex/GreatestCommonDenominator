@@ -2,7 +2,7 @@
 #define LIB_H
 #include <iostream>
 #include <iomanip>
-#include <stdlib.h>
+#include <cstdlib>
 
 ///<summary>
 /// Prompts user for two positive numbers
