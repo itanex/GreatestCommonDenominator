@@ -3,6 +3,8 @@
 int main (void)
 {
 	int first, second, gcd, answer;
+
+	answer = 1;
 			
 	while (answer != 0)
 	{
