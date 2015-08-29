@@ -1,37 +1,21 @@
-/*
-Bryan Wood
-Lib.h
-Variables: NUM1, NUM2, RMDR, N1, N2
-*/
-
-#include <iostream.h>
-#include <iomanip.h>
+#ifndef LIB_H
+#define LIB_H
+#include <iostream>
+#include <iomanip>
 #include <stdlib.h>
 
-/*-------------------------------------------------------
-prompts user for two positive numbers
-Receives: user input
-Returns: NUM1, NUM2
----------------------------------------------------------*/
-void getnums (int &NUM1, int &NUM2);
+///<summary>
+/// Prompts user for two positive numbers
+///</summary>
+void GetNumbers (int &first, int &second);
 
-/*-------------------------------------------------------
-determines if numbers are positive and request new numbers
-	if they aren't
-Receives: NUM1, NUM2
-Returns: NUM1,NUM2
----------------------------------------------------------*/
-void figureok (int &NUM1, int &NUM2);
+///<summary>
+/// Finds GCD using first and second values
+///</summary>
+int FindGCD (int &first, int &second);
 
-/*-------------------------------------------------------
-Finds GCD using NUM 1 and NUM2
-Receives: NUM1, NUM2
-Returns: RMDR
----------------------------------------------------------*/
-int findgcd (int &NUM1, int &NUM2, int &N1,int &N2, int &RMDR);
-
-/*-------------------------------------------------------
-Give results and ask to continues or exits program
-Receives: N1, N2, RMDR
----------------------------------------------------------*/
-int output (int N1, int N2, int RMDR);
+///<summary>
+/// Give results and ask to continue or exit program
+///</summary>
+int Output (int first, int second, int gcd);
+#endif
