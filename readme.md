@@ -1,0 +1,1 @@
+This program gets two numbers from the user and determines if the numbers are valid for use and then finds the gcd between the two numbers and print them to the screen and askes to continue.
